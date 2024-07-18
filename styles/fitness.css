@@ -74,6 +74,13 @@ body {
     background: rgb(43, 43, 43);
 }
 
+/* common for all section -------- */
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+}
+
 
 /* header style */
 header {
@@ -90,6 +97,7 @@ header {
 .web-title {
     font-size: 2.25em;
     font-weight: 800;
+    font-style: italic;
     text-align: left;
 }
 
@@ -136,10 +144,15 @@ header {
 
 /* header banner style */
 .banner {
-    border: 3px solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .banner-title {
@@ -158,12 +171,22 @@ header {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     text-align: left;
+    width: 600px;
 }
 
-.banner-image-container{
-    border: 3px solid rgb(248, 5, 5);
+.banner-button {
+    display: flex;
+    gap: 15px;
 }
 
+.banner-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card 350+ */
 #circle {
     width: 40px;
     height: 40px;
@@ -172,16 +195,19 @@ header {
 }
 
 .banner-card {
+    position: absolute;
+    width: 206px;
+    height: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     background: rgba(48, 48, 48, 0.54);
-    /* margin-left: -50px; */
+    left: -113px;
+    top: 421px;
 }
 
 .banner-card h4 {
@@ -196,14 +222,59 @@ header {
     text-align: left;
 }
 
+/* card 500+  */
+.banner-card2 {
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    left: 220px;
+    top: 130px;
+}
 
+.banner-card2 h4 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: left;
+}
 
+.banner-card2 p {
+    color: rgba(239, 237, 232, 0.65);
+    font-weight: 400;
+    text-align: left;
+}
+
+/* section----------- Change Your Habits -------------------------  */
+
+.habits {
+    border: 2px solid white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
 
 
 /* responsive and media query  */
 /* mobile  */
 @media screen and (max-width:576px) {
+
+    /* header */
+    .header {
+        width: 90%;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+    }
+
     .nav-options {
         display: none;
     }
@@ -211,6 +282,75 @@ header {
     .navbar i {
         display: block;
         font-size: 1.5rem;
+    }
+
+    /* banner */
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content,
+    .banner-image-container {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .banner-title {
+        font-size: 2.2rem;
+    }
+
+    #shape {
+        font-size: 3rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 169px;
+    }
+
+    #btn-club {
+        display: none;
+    }
+
+    .banner-description {
+        width: 100%;
+    }
+
+    /* image  */
+    /* card 350+ */
+    #circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner-card {
+        width: 155px;
+        height: 72px;
+        left: 13px;
+        top: 370px;
+    }
+
+    .banner-card h4 {
+        font-size: 1.12rem;
+    }
+
+    .banner-card p {
+        font-size: 0.8rem;
+    }
+
+    /* card 500+ */
+    .banner-card2 {
+        width: 145px;
+        height: 74px;
+        top: 170px;
+    }
+
+    .banner-card2 h4 {
+        font-size: 1.12rem;
+    }
+
+    .banner-card2 p {
+        font-size: 0.8rem;
     }
 }
 
