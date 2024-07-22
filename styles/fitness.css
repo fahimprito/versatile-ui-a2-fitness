@@ -458,8 +458,6 @@ header {
 /* -------section----------BMI Calculator-------- */
 .bmi {
     border: 1px solid white;
-    width: 80%;
-    margin: 0 auto;
     padding: 50px 0;
 }
 
@@ -470,6 +468,92 @@ header {
     gap: 15px;
 }
 
+
+/* -------section----------Meet Our Team------ */
+.team {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.team-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.trainer-container {
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trainer-name {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+.trainer-position {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    text-align: left;
+}
+
+.trainer1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer1.png");
+}
+
+.trainer2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer2.png");
+}
+
+.trainer3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer3.png");
+}
+
+.trainer4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer4.png");
+}
+
+.trainer5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer5.png");
+}
+
+.trainer6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer6.png");
+}
+
+.trainer1,
+.trainer2,
+.trainer3,
+.trainer4,
+.trainer5,
+.trainer6 {
+    /* background image */
+    height: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    /* name text  */
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 30px;
+}
+
+
+/* -------------footer------------ */
+
+footer{
+    border: 1px solid white;
+    padding: 50px 0;
+}
 
 
 
@@ -614,6 +698,10 @@ header {
     }
 
     /* Trainings and Exercises */
+    .exercises {
+        width: 85%;
+    }
+
     .exercises-types {
         grid-template-areas:
             "type1 type1 type2 type2 type2 "
@@ -658,6 +746,41 @@ header {
     .bmi-text {
         align-items: flex-start;
     }
+
+
+
+
+    /* -------section----------Meet Our Team------ */
+
+    .team {
+        width: 90%;
+    }
+
+    .team-text {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+
+    .team-text .section-description {
+        text-align: center;
+    }
+
+    .trainer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .trainer1,
+    .trainer2,
+    .trainer3,
+    .trainer4,
+    .trainer5,
+    .trainer6 {
+        /* background image */
+        height: 270px;
+    }
+
+
+    /* footerrrrrrrrrrrr */
 
 
 
