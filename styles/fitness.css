@@ -84,6 +84,7 @@ body {
 .section-description {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
+    line-height: 24px;
     text-align: left;
 }
 
@@ -336,11 +337,141 @@ header {
 
 /* section ---------Trainings and Exercises  */
 .exercises {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.exercises-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* -------images------- */
+.exercises-type1 {
+    grid-area: type1;
+}
+
+.exercises-type2 {
+    grid-area: type2;
+}
+
+.exercises-type3 {
+    grid-area: type3;
+}
+
+.exercises-type4 {
+    grid-area: type4;
+}
+
+.exercises-type5 {
+    grid-area: type5;
+}
+
+.exercises-type6 {
+    grid-area: type6;
+}
+
+.exercises-types {
+    margin-top: 60px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas:
+        "type1 type1 type2 type2 type2 type2 type3 type3"
+        "type4 type4 type4 type5 type5 type6 type6 type6"
+    ;
+}
+
+.exercises-type1,
+.exercises-type2,
+.exercises-type3,
+.exercises-type4,
+.exercises-type5,
+.exercises-type6 {
+    height: 250px;
+    display: flex;
+}
+
+.exercises-type1 h5,
+.exercises-type2 h5,
+.exercises-type3 h5,
+.exercises-type4 h5,
+.exercises-type5 h5,
+.exercises-type6 h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 40px;
+}
+
+.exercises-type1 {
+    background-image: linear-gradient(rgba(6, 255, 210, 0.4), rgba(6, 255, 210, 0.5)), url("../images/exercise1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column-reverse;
+}
+
+
+.exercises-type2 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url("../images/exercise2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.exercises-type3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/exercise3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column-reverse;
+}
+
+.exercises-type4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/exercise4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row-reverse;
+}
+
+.exercises-type5 {
+    background-image: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url("../images/exercise5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column-reverse;
+}
+
+.exercises-type6 {
+    background-image: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url("../images/exercise6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column-reverse;
+}
+
+
+
+/* -------section----------BMI Calculator-------- */
+.bmi {
     border: 1px solid white;
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
 }
+
+.bmi-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
 
 
 
@@ -454,9 +585,10 @@ header {
     }
 
     /* runnnnnnnnnn */
-    .run{
+    .run {
         width: 90%;
     }
+
     .run-contrainer {
         flex-direction: column;
         padding: 25px;
@@ -480,6 +612,53 @@ header {
     .run-text button {
         width: 100%;
     }
+
+    /* Trainings and Exercises */
+    .exercises-types {
+        grid-template-areas:
+            "type1 type1 type2 type2 type2 "
+            "type4 type4 type4 type5 type5 "
+        ;
+    }
+
+    .exercises-type3 {
+        display: none;
+    }
+
+    .exercises-type6 {
+        display: none;
+    }
+
+    .exercises-type1,
+    .exercises-type2,
+    .exercises-type3,
+    .exercises-type4,
+    .exercises-type5,
+    .exercises-type6 {
+        height: 150px;
+    }
+
+    .exercises-type1 h5,
+    .exercises-type2 h5,
+    .exercises-type3 h5,
+    .exercises-type4 h5,
+    .exercises-type5 h5,
+    .exercises-type6 h5 {
+        padding: 20px;
+    }
+
+    .exercises-type4 {
+        flex-direction: column-reverse;
+    }
+
+
+
+    /* BMI Calculator */
+
+    .bmi-text {
+        align-items: flex-start;
+    }
+
 
 
 }
