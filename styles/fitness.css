@@ -462,11 +462,56 @@ header {
 }
 
 .bmi-text {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
+    margin-bottom: 80px;
 }
+
+.bmi-chart-calculator-container {
+    border: 1px solid yellow;
+    background-color: rgb(34, 34, 34);
+    padding: 55px 0;
+}
+
+/* bmi chart  */
+
+.chart-heading {
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+}
+
+.bmi-chart-container th {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+}
+
+.bmi-chart-container td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+}
+
+.bmi-chart-container table,
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 15px 25px 15px 18px;
+}
+
+/* Calculate your BMI  */
+
+
 
 
 /* -------section----------Meet Our Team------ */
@@ -550,7 +595,7 @@ header {
 
 /* -------------footer------------ */
 
-footer{
+footer {
     border: 1px solid white;
     padding: 50px 0;
 }
@@ -744,8 +789,9 @@ footer{
     /* BMI Calculator */
 
     .bmi-text {
-        align-items: flex-start;
+        width: 90%;
     }
+
 
 
 
