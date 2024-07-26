@@ -471,25 +471,36 @@ header {
     margin-bottom: 80px;
 }
 
-.bmi-chart-calculator-container {
+.bmi-chart-calculator-container-background {
     border: 1px solid yellow;
     background-color: rgb(34, 34, 34);
     padding: 55px 0;
 }
 
-/* bmi chart  */
+.bmi-chart-calculator-container {
+    border: 1px solid yellow;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
-.chart-heading {
+.chart-heading,
+.calculator-heading {
     font-size: 1.75rem;
     font-weight: 900;
     line-height: 120%;
     text-align: left;
 }
 
+/* bmi chart  */
+.bmi-chart {
+    margin: 52px auto;
+}
+
 .bmi-chart-container th {
     font-size: 1rem;
     font-weight: 500;
-    line-height: 120%;
     text-align: left;
 }
 
@@ -510,7 +521,71 @@ td {
 }
 
 /* Calculate your BMI  */
+.bmi-calculator-container {
+    width: 600px;
+}
 
+.calculator-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 14px;
+}
+
+.bmi-input {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    border: none;
+    padding: 1rem;
+}
+
+.bmi-input option {
+    color: black;
+}
+
+.calculator-inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.bmi-input1 {
+    grid-area: height;
+}
+
+.bmi-input2 {
+    grid-area: weightt;
+}
+
+.bmi-input3 {
+    grid-area: age;
+}
+
+.bmi-input4 {
+    grid-area: sex;
+}
+
+.bmi-input5 {
+    grid-area: activity;
+}
+
+.calculator-inputs {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-areas:
+        "height weightt"
+        "age sex"
+        "activity activity"
+    ;
+    gap: 12px;
+    margin: 35px auto;
+
+}
 
 
 
