@@ -457,7 +457,6 @@ header {
 
 /* -------section----------BMI Calculator-------- */
 .bmi {
-    border: 1px solid white;
     padding: 50px 0;
 }
 
@@ -472,13 +471,11 @@ header {
 }
 
 .bmi-chart-calculator-container-background {
-    border: 1px solid yellow;
     background-color: rgb(34, 34, 34);
     padding: 55px 0;
 }
 
 .bmi-chart-calculator-container {
-    border: 1px solid yellow;
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -495,7 +492,7 @@ header {
 
 /* bmi chart  */
 .bmi-chart {
-    margin: 52px auto;
+    margin: 52px 0;
 }
 
 .bmi-chart-container th {
@@ -534,7 +531,10 @@ td {
     margin-top: 14px;
 }
 
+
+
 .bmi-input {
+    /* width: 100%; */
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
@@ -543,7 +543,7 @@ td {
     line-height: 22px;
     text-align: left;
     border: none;
-    padding: 1rem;
+    padding: 15px;
 }
 
 .bmi-input option {
@@ -861,13 +861,37 @@ footer {
 
 
 
-    /* BMI Calculator */
+    /* section ---------------- BMI Calculator */
 
     .bmi-text {
         width: 90%;
     }
 
+    .bmi-chart-calculator-container {
+        flex-direction: column;
+        width: 90%;
+    }
 
+    /* bmi chart  */
+    .bmi-chart {
+        margin: 24px 0;
+    }
+
+    .chart-heading,
+    .calculator-heading {
+        font-size: 1.2rem;
+    }
+
+
+    /* Calculate your BMI  */
+    .bmi-calculator-container {
+        width: 100%;
+    }
+
+    .bmi-input {
+        font-size: 0.7rem;
+
+    }
 
 
 
