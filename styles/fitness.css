@@ -671,8 +671,83 @@ td {
 /* -------------footer------------ */
 
 footer {
-    border: 1px solid white;
+    background-color: rgb(34, 34, 34);
     padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    border: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    border: 1px solid tomato;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ...................footer top left.................  */
+.footer-top-left {
+    border: 1px solid rgb(255, 243, 71);
+    width: 50%;
+}
+
+.footer-top-left h2 {
+    color: rgb(230, 83, 60);
+    font-size: 4.37rem;
+    font-weight: 800;
+    text-align: left;
+    font-style: italic;
+}
+
+.footer-top-left p {
+    width: 75%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* ...................footer top right.................  */
+.footer-top-right {
+    border: 1px solid rgb(71, 120, 255);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-right-item1 h4,
+.footer-top-right-item2 h4 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.footer-top-right-item1 ul li,
+.footer-top-right-item2 ul li {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.43rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    list-style: none;
+
+}
+.footer-top-right-item1 ul,
+.footer-top-right-item2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-bottom hr {
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 
