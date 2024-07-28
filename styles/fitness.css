@@ -603,7 +603,6 @@ td {
 
 /* -------section---------choose your plan------ */
 .plan {
-    border: 2px solid white;
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
@@ -615,19 +614,19 @@ td {
     align-items: center;
     gap: 35px;
     margin-bottom: 50px;
-    border: 2px solid rgb(23, 37, 226);
 }
 
 .plan-time {
+    width: 340px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 50px;
     border: 2px solid rgb(230, 83, 60);
     border-radius: 42px;
 }
 
 #btn-monthly {
-    width: 170px;
+    width: 50%;
     height: 54px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
@@ -640,7 +639,7 @@ td {
 }
 
 #btn-annual {
-    width: 170px;
+    width: 50%;
     height: 54px;
     border-radius: 42px;
     background: black;
@@ -653,9 +652,9 @@ td {
 }
 
 .plan-card-container {
-    border: 2px solid yellow;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
@@ -669,24 +668,28 @@ td {
     align-items: center;
     gap: 40px;
     padding: 30px 50px;
-    transition-duration: 0.1s ;
+    transition-duration: 0.1s;
 }
 
 /* card hover code */
-.plan-card:hover{   
+.plan-card:hover {
     background-color: rgb(230, 83, 60);
     transform: scale(105%);
 }
-.plan-card:hover .btn-choose-plan{
+
+.plan-card:hover .btn-choose-plan {
     background: white;
     color: rgb(230, 83, 60);
 }
-.plan-card:hover .plan-offers{
+
+.plan-card:hover .plan-offers {
     color: white;
 }
-.plan-card:hover .per-month{
+
+.plan-card:hover .per-month {
     color: rgba(255, 255, 255, 0.8);
 }
+
 /* card hover code end */
 .plan-name {
     font-size: 1.3rem;
@@ -705,11 +708,13 @@ td {
     color: white;
     font-size: 3rem;
 }
-.plan-card ul{
+
+.plan-card ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .plan-card ul li i {
     font-size: 1.3rem;
     padding-right: 5px;
@@ -1124,6 +1129,23 @@ footer {
 
     }
 
+    /* -------section---------choose your plan------ */
+
+    .plan{
+        width: 90%;
+    }
+    .plan-time{
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .plan-card-container{
+        flex-direction: column;
+        
+    }
+    .plan-card {
+        width: calc(90% - 100px); 
+    }
 
 
     /* -------section----------Meet Our Team------ */
