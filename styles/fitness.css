@@ -201,6 +201,9 @@ header {
     height: 40px;
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-card {
@@ -534,10 +537,13 @@ td {
     margin-top: 14px;
 }
 
+/* .calculator-inputs input {
+    width: calc(100% - 30px);
+} */
 
 
 .bmi-input {
-    /* width: 100%; */
+    width: calc(100% - 30px);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
@@ -547,6 +553,10 @@ td {
     text-align: left;
     border: none;
     padding: 15px;
+}
+
+.calculator-inputs select {
+    width: 100%;
 }
 
 .bmi-input option {
@@ -974,7 +984,7 @@ footer {
     }
 
     .bmi-input {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
 
     }
 
