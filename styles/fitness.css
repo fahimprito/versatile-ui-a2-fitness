@@ -1131,20 +1131,22 @@ footer {
 
     /* -------section---------choose your plan------ */
 
-    .plan{
+    .plan {
         width: 90%;
     }
-    .plan-time{
+
+    .plan-time {
         width: 90%;
         margin-bottom: 0;
     }
 
-    .plan-card-container{
+    .plan-card-container {
         flex-direction: column;
-        
+
     }
+
     .plan-card {
-        width: calc(90% - 100px); 
+        width: calc(90% - 100px);
     }
 
 
@@ -1215,4 +1217,20 @@ footer {
 }
 
 /* tab or medium device  */
-@media screen and (min-width:576px) and (max-width:992px) {}
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* header */
+    .header {
+        width: 90%;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+    }
+
+    /* banner */
+    .banner {
+        flex-direction: column;
+    }
+
+}
