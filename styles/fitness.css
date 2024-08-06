@@ -1233,4 +1233,92 @@ footer {
         flex-direction: column;
     }
 
+    .banner-content,
+    .banner-image-container {
+        /* width: 100%; */
+        margin-bottom: 50px;
+    }
+
+    /* havits section ------------ */
+    .habit-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* runnnnnnnnnn */
+    .run-contrainer {
+        /* flex-direction: column; */
+        padding: 25px;
+        gap: 30px;
+    }
+    .run img,
+    .run-text {
+        width: 100%;
+        /* height: 100%; */
+    }
+    .run-text .section-title {
+        margin-bottom: 15px;
+    }
+
+    .run-text .section-description {
+        margin-bottom: 25px;
+    }
+
+    /* section ---------------- BMI Calculator */
+
+    .bmi-text {
+        width: 90%;
+    }
+
+    .bmi-chart-calculator-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /* -------section---------choose your plan------ */
+
+    .plan {
+        width: 90%;
+    }
+
+    .plan-time {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .plan-card {
+        width: calc(90% - 100px);
+    }
+
+    .plan-card {
+        width: 30%;
+        gap: 30px;
+        padding: 20px 30px;
+    }
+    .plan-name {
+        font-size: 1rem;
+    }
+
+    .per-month {
+        font-size: 1rem;
+    }
+    #plan-price {
+        font-size: 2rem;
+    }
+
+    .plan-card-container {
+        gap: 20px;
+    }
+
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-top-right {
+        width: 80%;
+        gap: 50px;
+    }
+
+
 }
